@@ -5,10 +5,10 @@ function mostrar()
 {	
 	var nombre;
 	var edad
-	var mensaje1 = "usted se llama ";
-	var mensaje2 = "y tiene";
-	var mensaje3 = "años";
-
+	
+	//var mensaje1 = "usted se llama ";
+	//var mensaje2 = "y tiene";
+	//var mensaje3 = "años";
 
 	//asignar 
 	nombre = txtIdNombre.value;
@@ -18,7 +18,7 @@ function mostrar()
     // una posibilidad: alert(mensaje1+nombre+mensaje2+edad+mensaje3);
 
     // otra:
-	alert("usted se llama " +nombre+" y tiene + "+edad+" años");
+	alert("usted se llama " +nombre+" y tiene "+edad+" años");
 
 	
 

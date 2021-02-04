@@ -6,24 +6,18 @@ function sumar()
 {
 	//declaraciones
 
-	var numerouno;
-	var numerodos;
-	var suma;
-	var numerounoparseado;
-	var numerodosparseado;
+	var num1;
+	var num2;
+	var resultado;
 
-	//asignar
-	numerouno = txtIdNumeroUno.value;
-	numerodos = txtIdNumeroDos.value;
-
-	//transformar enteros
-	numerounoparseado = parseInt(numerouno);
-	numerodosparseado = parseInt(numerodos);
-
-	//realizar operacion aritmetica
-	suma = numerunoparseado + numerodosparseado;
+	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	
-	alert("el resultado es "+suma);
+	resultado = num1 + num2;
+
+	
+	
+	alert("el resultado de la suma es " + resultado);
 
 
 
