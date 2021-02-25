@@ -1,12 +1,17 @@
 /*
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
+
 function mostrar()
-{
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	{
+		var sexo;
 
+		sexo = prompt("ingrese sexo");
 
+		while( (! sexo == "f" ) || (! sexo == "m" ) ){
+			
+		sexo = prompt("ingrese nuevamente un sexo");
 
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+		}
+		alert("el sexo ingresado es correcto");
+	}
