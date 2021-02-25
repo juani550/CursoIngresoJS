@@ -9,17 +9,51 @@ function SacarResto()
 	var divisor;
 	var resultado;
 
-	dividendo = parseInt(document.getElementById("txtIdNumeroDividendo").value);
-	
-	divisor = parseInt(document.getElementById("txtIdNumeroDivisor").value);
-	
+	dividendo = txtIdNumeroDividendo.value;
+	divisor = txtIdNumeroDivisor.value;
+
+	dividendo = parseInt(dividendo);
+	divisor = parseInt(divisor);
+
+
 	resultado = dividendo % divisor;
 
 	
 	
 	alert("el resto es " + resultado);
 
+}
+ /*
+
+ function mostrar()
+{
+
+	var numeroUno;
+	var numeroDos;
+	
+	var suma;
+	var promedio;
+	var modulo;
 
 
+	numeroUno = txtIdNumeroDividendo.value;
+	numeroDos = txtIdNumeroDivisor.value;
+
+	numeroUno = parseFloat(numeroUno);
+	numeroDos = parseFloat(numeroDos);
+
+	suma = numeroUno + numeroDos;
+
+	promedio = (numeroUno + numeroDos) /2;
+
+	modulo = numeroUno % numeroDos;
+
+	console.log(suma);
+
+	console.log(promedio);
+
+	console.log(modulo);
 
 }
+*/
+
