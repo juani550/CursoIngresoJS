@@ -1,3 +1,7 @@
+/*
+al presionar el botón mostrará 10 números
+que estaran contenidos en un vector.
+*/
 function mostrar()
 {
 
@@ -21,9 +25,5 @@ document.write("El contenido del vector es: <br>");
 
 		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
 	}
-
-
-
-
 
 }//FIN DE LA FUNCIÓN
