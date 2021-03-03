@@ -1,40 +1,3 @@
-/*
-function mostrar()
-{
-	var estacionIngresada = txtIdEstacion.value;
-	var destino = txtIdDestino.value;
-
-	switch(estacionIngresada){
-		case "Invierno":
-			switch(destino){
-				case "Bariloche":
-					alert("se viaja");
-				case "Cataratas":
-				case "Mar del plata":
-				case "Cordoba":
-					alert("no se viaja");
-						switch(estacionIngresada){
-							case "Verano":
-								switch(destino){
-									case "Mar del plata":
-									case "Cataratas":
-										alert("se viaja");
-									case "Bariloche":
-									case "Cordoba":
-										alert("no se viaja");
-
-								}
-						}
-						
-		}
-			
-			
-
-	}
-
-
-}//FIN DE LA FUNCIÓN
-*/
 
 function mostrar()
 {
@@ -86,3 +49,42 @@ function mostrar()
 			break; 
 		}	
 }
+
+
+/*
+function mostrar()
+{
+	var estacionIngresada = txtIdEstacion.value;
+	var destino = txtIdDestino.value;
+
+	switch(estacionIngresada){
+		case "Invierno":
+			switch(destino){
+				case "Bariloche":
+					alert("se viaja");
+				case "Cataratas":
+				case "Mar del plata":
+				case "Cordoba":
+					alert("no se viaja");
+						switch(estacionIngresada){
+							case "Verano":
+								switch(destino){
+									case "Mar del plata":
+									case "Cataratas":
+										alert("se viaja");
+									case "Bariloche":
+									case "Cordoba":
+										alert("no se viaja");
+
+								}
+						}
+						
+		}
+			
+			
+
+	}
+
+
+}//FIN DE LA FUNCIÓN
+*/
