@@ -13,20 +13,3 @@ function mostrar()
 	alert("clave validada");
 }
 
-
-
-/*
-function mostrar()
-{
-	var claveIngresada;
-	claveIngresada = prompt("ingrese el número clave.");
-
-	if( claveIngresada == "utn750" ){
-		alert("clave aceptada");	
-	}
-	else{
-		alert("clave incorrecta");
-	}
-	
-}//FIN DE LA FUNCIÓN
-*/

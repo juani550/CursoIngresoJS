@@ -36,6 +36,8 @@ function mostrar()
 
 
 
+/*
+ejercicio practica
 
 function mostrar()
 {
@@ -53,3 +55,4 @@ function mostrar()
 	alert("el resultado de la suma es " +suma );
 
 }
+*/
