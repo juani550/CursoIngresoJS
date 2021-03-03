@@ -7,7 +7,7 @@ function mostrar()
 
 	repeticiones = parseInt( prompt("pida la cantidad de veces") );
 
-	for ( var i =0 ; i < /*limite*/ repeticiones; i++ ){ // [preguntar porque i es < a repeticiones]
+	for ( var i =0 ; i < repeticiones; i++ ){ /* i es limite porque arranca de 0 y despues aumenta de a 1(i++) hasta ser menor a las repeticiones*/
 		
 		console.log( i + "Hola UTN FRA");
 	}

@@ -18,7 +18,7 @@ function mostrar()
 
 		if(i % 2 == 0 ){
 			contadorpares++;
-			console.log( i );
+			document.write( i );
 		}
 	}
 

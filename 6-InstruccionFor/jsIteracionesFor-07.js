@@ -26,7 +26,7 @@ console.log("los divisores son " +contadordivisores );
 
 
 
-
+/*
 //ejercicio con array
 function mostrar()
 {
@@ -46,3 +46,4 @@ function mostrar()
 
 console.log("los divisores son " +contadordivisores );
 }
+*/
