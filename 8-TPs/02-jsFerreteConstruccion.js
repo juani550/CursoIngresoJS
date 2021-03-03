@@ -7,8 +7,6 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 function Rectangulo () 
 {
 
-    var largoString;
-    var anchoString;
     
     var largonumero;
     var anchonumero;
@@ -17,11 +15,11 @@ function Rectangulo ()
     var alambre
 
 
-    largoString = txtIdLargo.value;
-    anchoString = txtIdAncho.value;
+    largonumero = txtIdLargo.value;
+    anchonumero = txtIdAncho.value;
 
-    largonumero = parseFloat(largoString);
-    anchonumero = parseFloat(anchoString);
+    largonumero = parseFloat(largonumero);
+    anchonumero = parseFloat(anchonumero);
 
     perimetro = (largonumero*2) + (anchonumero*2);
 
@@ -50,20 +48,43 @@ function Circulo ()
 
     alambre = perimetro *3;
 
-    alert("la cantidad de alambre a comprar es " +alambre);
+    alert("La cantidad de alambre a comprar es " +alambre);
     
-
-
-
-    
-    
-
 
 }
+
+/*
+Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, 
+debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas del terreno rectangular.
+*/
+
+
 function Materiales () 
 {
     
+    var cemento = 2;
+    var cal = 3;
     
+    var largo;
+    var ancho;
+    var area;
 
+    var bolsasCemento;
+    var bolsasCal;
+
+    
+    largo = txtIdLargo.value;
+    largo = parseFloat(largo);
+
+    ancho = txtIdAncho.value;
+    ancho = parseFloat(ancho);
+
+    area = largo * ancho;
+    
+    bolsasCemento = area *2;
+    bolsasCal = area *3;
+
+
+    alert("Para un contrapiso de " +area+ " m2 necesito comprar " +bolsasCemento+ " bolsas de cemento y " +bolsasCal+ " bolsas de cal.");
 
 }

@@ -8,7 +8,83 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+
+
+
+/*
 function CalcularPrecio () 
 {
- 	
+ 	var cantidadLamparitas;
+    var descuento;
+    var precioFinal;
+    var precioUnitarioLampara = 35;
+    var marcaLampara;
+
+    cantidadLamparitas = txtIdCantidad.value;
+    cantidadLamparitas = parseInt(cantidadLamparitas);
+
+    marcaLampara = Marca.value;
+
+
+    if(cantidadLamparitas >= 6 )
+    {
+        //Mayor 5
+        //aplicar descuento del 50%.
+        
+        descuento = (cantidadLamparitas * 35) * 50 / 100;
+        precioFinal = (cantidadLamparitas * 35) - descuento;
+
+        txtIdprecioDescuento.value = precioFinal;
+
+        alert("el precio es $" + precioFinal);
+    }
+    else
+    {
+        //Menor o = 5
+        //Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" 
+        se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.//
+        if(cantidadLamparitas == 5)
+        {
+            if(marcaLampara == "ArgentinaLuz")
+            {
+                //descuento del 40 %
+                descuento = 40;
+            }
+            else
+            {
+                //el otro descuento
+                descuento = 30;
+            }
+        }
+        else
+        {
+            
+        }
+    }
+    
+}
+
+*/
+
+function CalcularPrecio () 
+{
+ 	var cantidadLamparitas;
+    var descuento1;
+    var precioUnitarioLampara = 35;
+    var marcaLampara;
+    var precioFinal;
+
+    cantidadLamparitas = txtIdCantidad.value;
+    cantidadLamparitas = parseInt(cantidadLamparitas);
+    marcaLampara = Marca.value;
+
+
+
+    switch(cantidadLamparitas){
+        case (cantidadLamparitas >= 6):
+            
+
+    }
+
+
 }
