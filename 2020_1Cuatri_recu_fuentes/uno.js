@@ -1,17 +1,16 @@
 /*
-Debemos realizar la carga de 5(cinco) productos de prevención de contagio,
+Debemos realizar la carga de una compra de 5(cinco) productos de prevención de contagio,
 de cada una debo obtener los siguientes datos:
-el tipo (validar "barbijo" , "jabón" o "alcohol") ,
+el tipo de producto (validar "barbijo" , "jabón" o "alcohol") ,
 el precio (validar entre 100 y 300),
 la cantidad de unidades (no puede ser 0 o negativo y no debe superar las 1000 unidades),
 la Marca y el fabricante.
 Se debe Informar al usuario lo siguiente:
-a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
-b) Del tipo con mas unidades, el promedio por compra
-c) Cuántas unidades de jabones hay en total
+a) Del más caro de los jabones, la cantidad de unidades y el fabricante
+b) Del tipo de producto con más unidades en total de la compra, el promedio por compra
+c) Cuántas unidades de Barbijos se compraron en total
 */
-
-function mostrar()
+function mostrar() // es otro ejercicio falta terminar
 {
 	//genero un bucle de 5 repeticiones debido a 5 compras
 	//(tipo,precio,cantidad,marca,fabricante) validar tipo de produto
@@ -28,12 +27,12 @@ function mostrar()
 	var contadorbarbijo = 0;
 	var contadoralcohol = 0;
 	var contadorjabon = 0;
-	var precioAlcoholbarato;
-	var cantalcoholbarato;
-	var fabricanteAlcoholbarato;
+	var precioJaboncaro;
+	var cantJabonbarato;
+	var fabricanteJaboncaro;
 	var promedioCompra;
 	var mayorTipo;
-	var flagalcohol = 0;
+	var flagjabon = 0;
 	var mensajeAlcohol;
 	var mensajebarbijo;
 	var mensajejabon;
@@ -55,20 +54,15 @@ function mostrar()
 			cantidad = parseInt(prompt("reingrese un cantidad correcta"));
 		}
 		marca = prompt("ingrese una marca");
+
 		fabricante = prompt("ingrese un fabricante");
 		}
-
+//punto a
 		switch(tipo){
 			case "alcohol":
 				acumuladorAlcohol+=cantidad;
 				contadoralcohol++;
 				
-				if(flagalcohol == 0 || precioalcoholbarato < precio ){
-					precioalcoholbarato = precio;
-					contadoralcohol = cantidad;
-					fabricanteAlcoholbarato = fabricante;					
-					flagalcohol = 1;
-				} 
 				break;
 				
 				case "barbijo":
@@ -79,9 +73,16 @@ function mostrar()
 				case "jabon":
 				acumuladorJabon+=cantidad;
 				contadorjabon;
+
+                if(flagjabon == 0 || precioJaboncaro > precio ){
+					precioJaboncaro = precio;
+					contadorjabon = cantidad;
+					fabricanteJaboncaro = fabricante;					
+					flagjabon = 1;
+				} 
 				break;
 		}
-
+//punto b
 		if(acumuladorAlcohol > acumuladorBarbijo && acumuladorAlcohol > acumuladorJabon ){
 			mayorTipo = "alcohol";
 			promedioCompra = acumuladorAlcohol / contadoralcohol;	
@@ -96,15 +97,15 @@ function mostrar()
 			promedioCompra = acumuladorJabon / contadorjabon;
 		}
 		
-		if(contadoralcohol == 0){
-			flagalcohol = 1 = "A-fabricante alcohol barato: "+ fabricanteAlcoholbarato + 
-			"/ncantidad: " + cantalcoholbarato +
-			"/nprecio: " + precioAlcoholbarato ;
+		if(contadorjabon == 0){
+			flagjabon = 1 = "A-fabricante alcohol barato: "+ fabricanteJaboncaro + 
+			"/ncantidad: " + cantJabonbarato + fabricanteJaboncaro
+			"/nprecio: " + precioJaboncaro ;
 		}
 
 		mensajebarbijo = "B- tipo con mas unidades" + mayorTipo + "promedio" + promedioCompra;
 		mensajejabon = "C- unidades de jabon: " + acumuladorJabon;
 
-		alert(mensajeAlcohol + "/n" + mensajebarbijo + "/n" + mensajejabon );
+		alert(mensajeAlcohol + "/n" + mensajebarbijo + "/n" + mensajejabon );   
 
 }
